@@ -41,16 +41,6 @@ describe("Test Button Components", () => {
     expect(onClick).toBeCalled();
     expect(onClick).toBeCalledTimes(1);
   });
-  it.concurrent.each`
-  a    | b    | expected
-  ${1} | ${1} | ${2}
-  ${1} | ${2} | ${3}
-  ${2} | ${1} | ${3}
-`("returns $expected when $a is added to $b", async ({ a, b, expected }) => {
-    expect(a + b).toBe(expected);
-  });
 
-  it.fails("Test Fails", () => {
-    expect(10).toBe(1);
-  });
+   it.todo("Should render a normal string");
 });
