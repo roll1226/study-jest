@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-describe("Test Fails", () => {
+describe("Test Each", () => {
   it.concurrent.each`
   a    | b    | expected
   ${1} | ${1} | ${2}
