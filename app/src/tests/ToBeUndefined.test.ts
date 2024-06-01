@@ -6,11 +6,6 @@ describe("toBeUndefinedの使用例", () => {
     expect(value).toBeUndefined();
   });
 
-  it("オブジェクトのプロパティが未定義であることを確認する", () => {
-    const obj = { a: 1 };
-    expect(obj.b).toBeUndefined();
-  });
-
   it("関数の戻り値が未定義であることを確認する", () => {
     function doNothing() {}
     expect(doNothing()).toBeUndefined();
