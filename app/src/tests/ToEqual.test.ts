@@ -1,7 +1,5 @@
 import { describe, expect, it } from "vitest";
-
-type CreateObjectType<T, K> = (a: T, b: K) => { a: T; b: K };
-type CreateArrayType<T> = (...elements: [...T[]]) => T[];
+import { CreateArrayType, CreateObjectType } from "./types/type";
 
 describe("関数の戻り値のテスト", () => {
   it("オブジェクトが等しいことを確認", () => {
